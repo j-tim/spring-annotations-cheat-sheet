@@ -1,8 +1,10 @@
-# Spring Aannotations Cheat Sheet
+# Spring Annotations Cheat Sheet
 
-Quick overview of Spring annotations.
+Quick overview of Spring (and related project) annotations.
+This page is written from a Spring developer viewpoint and not all annotations are necessarily
+from the Spring Framework or related sub project.
 
-| Annotation                | Spring Project           | Description                                                        | Note(s) | Maven                                  |
-|---------------------------|--------------------------|--------------------------------------------------------------------|---------|----------------------------------------|
-| @EnableHystrixDashboard   | Spring Cloud - Hystrix   | Turns a Spring Boot application into a Hystrix dashboard           |         | spring-cloud-starter-hystrix-dashboard | 
-| @HystixCommand            | Spring Cloud - Hystrix   |                                                                    |         | spring-cloud-starter-hystrix           |
+| Annotation                | (Spring) Project           | Description                                                        | Note(s) | Maven                                                              |
+|---------------------------|--------------------------|--------------------------------------------------------------------|---------|--------------------------------------------------------------------|
+| [@EnableHystrixDashboard](https://github.com/spring-cloud/spring-cloud-netflix/blob/master/spring-cloud-netflix-hystrix-dashboard/src/main/java/org/springframework/cloud/netflix/hystrix/dashboard/EnableHystrixDashboard.java)   | Spring Cloud Netflix   | Turns a Spring Boot application into a Hystrix dashboard           | Circuit breaker | [spring-cloud-starter-hystrix-dashboard](http://www.mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix-dashboard)   | 
+| [@HystixCommand](https://github.com/Netflix/Hystrix/blob/master/hystrix-contrib/hystrix-javanica/src/main/java/com/netflix/hystrix/contrib/javanica/annotation/HystrixCommand.java)   | Javanica (comes with Spring Cloud Netflix)   |                                                                    | Circuit breaker | [spring-cloud-starter-hystrix](http://www.mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix)   |
